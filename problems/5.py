@@ -4,6 +4,7 @@ import random
 
 
 def func(s):
+    # cache记录每个字符在s中位置，center记录每个中心扩散出的回文串长度
     cache = defaultdict(list)
     center = defaultdict(int)
     for i, item in enumerate(s):

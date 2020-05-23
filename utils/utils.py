@@ -13,7 +13,7 @@ def container(run, *args, **kwargs):
 
 def random_str(slen=10):
     # seed = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+=-"
-    seed = 'qwertyuiopasdfghjklzxcvbnm'
+    seed = 'abcdefghijklmnopqrstuvwxyz'
     sa = []
     for i in range(slen):
         sa.append(random.choice(seed))
