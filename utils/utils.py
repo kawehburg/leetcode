@@ -4,10 +4,12 @@ import sys
 import random
 
 
-def container(run, *args, **kwargs):
+def container(run, *args, display=None, **kwargs):
     t = time.time()
     results = run(*args, **kwargs)
     print('time cost=', time.time() - t)
+    if display:
+        results = display(results)
     print('results =', results)
 
 
