@@ -49,5 +49,4 @@ def func(head, n):
         return delete.next
 
 
-
 container(func, build_chain([1, 2, 3, 4]), 3, display=display_chain)

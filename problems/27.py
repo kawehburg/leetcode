@@ -14,4 +14,4 @@ def func(nums, val):
     return j
 
 
-container(func, [0,1,2,2,3,0,4,2], 2)
+container(func, [0, 1, 2, 2, 3, 0, 4, 2], 2)
