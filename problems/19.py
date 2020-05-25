@@ -33,13 +33,21 @@ def display_chain(head):
 
 def func(head, n):
     ptr = head
-    collect = {}
     i = 0
+    delete = ptr
+    di = 0
     while ptr:
-        collect[i] = ptr
         ptr = ptr.next
+        if i - di == n + 1:
+            delete = delete.next
+            di += 1
         i += 1
-    return head
+    if i - di == n + 1:
+        delete.next = delete.next.next
+        return head
+    else:
+        return delete.next
 
 
-container(func, build_chain([1, 2, 3, 4, 5]), 2, display=display_chain)
+
+container(func, build_chain([1, 2, 3, 4]), 3, display=display_chain)
